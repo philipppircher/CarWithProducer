@@ -3,7 +3,7 @@ package at.xxx.examples.cars;
 public class Engine {
     // Memberconstants
     //
-    private enum FUELTYPE {GASOLINE, DIESEL};
+    public enum FUELTYPE {GASOLINE, DIESEL};
     private final int HORSEPOWER;
 
     // Membervariables
@@ -15,5 +15,12 @@ public class Engine {
     public Engine(FUELTYPE fueltype, int HORSEPOWER) {
         this.fueltype = fueltype;
         this.HORSEPOWER = HORSEPOWER;
+    }
+
+    // Methodes
+    //
+    public void printEngineData(){
+        System.out.println("Kraftstoff:                     " + this.fueltype);
+        System.out.println("Pferdestärke:                   " + this.HORSEPOWER + "PS");
     }
 }
